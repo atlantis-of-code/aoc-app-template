@@ -1,0 +1,31 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "target": "es2020",
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "typeRoots": ["node_modules/@types"],
+    "emitDecoratorMetadata": true,
+    "outDir": "dist",
+    "paths": {
+      "@atlantis-of-code/aoc-server": ["../../aoc/aoc-server/src" ],
+      "@atlantis-of-code/aoc-server/aoc-common": ["../../aoc/aoc-server/src/aoc-common" ],
+      "@mikro-orm/core": ["node_modules/@mikro-orm/core"],
+      "@mikro-orm/postgresql": ["node_modules/@mikro-orm/postgresql"],
+      "big.js": ["node_modules/big.js"],
+      "express": ["node_modules/express"],
+      "express-async-errors": ["node_modules/express-async-errors"],
+      "app-common": ["../app-common"]
+    }
+  },
+  "include": [
+    "typings.d.ts",
+    "src/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
