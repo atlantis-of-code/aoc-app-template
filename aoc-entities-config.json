@@ -1,0 +1,18 @@
+{
+  "$schema": "../aoc/aoc-cli/src/lib/entity-generator/config/aoc-entities-config.schema.json",
+  "schemas": ["users"],
+  "entityBaseClass": {
+    "name": "AppTemplateEntity",
+    "path": "../app-template-entity",
+    "implementedProperties": [
+      "id", "modification_time", "modification_user"
+    ]
+  },
+  "modelBaseClass": {
+    "name": "AppTemplateModel",
+    "path": "../app-template-model",
+    "implementedProperties": [
+      "id", "modification_time", "modification_user"
+    ]
+  }
+}
