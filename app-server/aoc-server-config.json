@@ -1,0 +1,19 @@
+{
+  "$schema": "../../aoc/aoc-server/aoc-server-config.schema.json",
+  "base": {
+    "appId": "appTemplate",
+    "programName": "App Template",
+    "locale": "en",
+    "multiTenancy": false,
+    "node": {
+      "port": 3000,
+      "logLevel": "trace",
+      "requestLimit": "100mb",
+      "useAuthHelper": true,
+      "sessionSecret": "random-generated-session-secret",
+      "socketIo": {
+        "postgresAdapter": {}
+      }
+    }
+  }
+}
