@@ -7,8 +7,7 @@
  *
  */
 
-const config = require('./tsconfig.json'); // /dist
-const outDir = config.compilerOptions.outDir;
+const outDir = 'dist';
 const srcDir = 'src';
 
 // Do here all the operations you need to be done previous to building...
