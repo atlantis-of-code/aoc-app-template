@@ -21,7 +21,12 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@atlantis-of-code/aoc-client": [ "../../aoc/aoc-client/projects/aoc-client" ],
+      "@atlantis-of-code/aoc-client/*": [ "../../aoc/aoc-client/projects/aoc-client/*" ],
+      "app-common": [ "../app-common" ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
