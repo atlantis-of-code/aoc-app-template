@@ -8,6 +8,7 @@
     "build": "rimraf dist && tsc",
     "dev": "tsc --incremental --watch"
   },
+  "private": true,
   "author": "atlantisofcode.com",
   "license": "ISC",
   "dependencies": {},
