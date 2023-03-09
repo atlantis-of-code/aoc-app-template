@@ -1,0 +1,24 @@
+-- creates empty database
+create database 'app-template';
+
+-- create table for common metadata that other tables will inherit
+create table public.meta (
+  creation_user bigint,
+  creation_time bigint,
+  modification_user bigint,
+  modification_time bigint
+);
+
+-- creates users schema
+create schema users;
+
+-- create table users.user
+create table users.user
+(
+  id              bigserial                                                primary key,
+  username        text                                                     not null,
+  email           text                                                     not null,
+  pass            text                                                     not null,
+  full_name       text
+)
+  inherits (meta);

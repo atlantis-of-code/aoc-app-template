@@ -3,17 +3,19 @@ import { PrimaryKey, Property, t } from '@mikro-orm/core';
 
 export class AppTemplateEntity extends AocEntity {
 
-  /**
-   * Cannot use BigIntType by now
-   * https://github.com/mikro-orm/mikro-orm/issues/1968
-   */
-  @PrimaryKey({type: t.bigint})
-    id?: string;
+  @PrimaryKey({ type: t.bigint/*, nullable: true*/ }) // TODO: check "nullable: true" issue
+  id?: string;
 
-    @Property({nullable: true, type: 'text'})
-    modification_time?: string;
+  @Property({ nullable: true, type: 'text' })
+  creation_user: string;
 
-    @Property({nullable: true, type: 'text'})
-    modification_user?: string;
+  @Property({ nullable: true, type: 'text' })
+  creation_time: string;
+
+  @Property({ nullable: true, type: 'text' })
+  modification_user: string;
+
+  @Property({ nullable: true, type: 'text' })
+  modification_time: string;
 
 }

@@ -5,14 +5,14 @@
     "name": "AppTemplateEntity",
     "path": "../app-template-entity",
     "implementedProperties": [
-      "id", "modification_time", "modification_user"
+      "id", "creation_user", "creation_time", "modification_user", "modification_time"
     ]
   },
   "modelBaseClass": {
     "name": "AppTemplateModel",
     "path": "../app-template-model",
     "implementedProperties": [
-      "id", "modification_time", "modification_user"
+      "id", "creation_user", "creation_time", "modification_user", "modification_time"
     ]
   }
 }
