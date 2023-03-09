@@ -5,10 +5,10 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
+    "strict": false,
+    "noImplicitOverride": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "noImplicitReturns": false,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
@@ -23,10 +23,15 @@
       "dom"
     ],
     "paths": {
+      "@angular/*": [ "node_modules/@angular/*" ],
+      "angular-split": [ "node_modules/angular-split" ],
+      "rxjs": [ "node_modules/rxjs" ],
+      "rxjs/*": [ "node_modules/rxjs/*" ],
       "@atlantis-of-code/aoc-client": [ "../../aoc/aoc-client/projects/aoc-client" ],
       "@atlantis-of-code/aoc-client/*": [ "../../aoc/aoc-client/projects/aoc-client/*" ],
       "app-common": [ "../app-common" ]
-    }
+    },
+    "allowSyntheticDefaultImports": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
