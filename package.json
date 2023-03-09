@@ -1,0 +1,30 @@
+{
+  "name": "aoc-app-template",
+  "version": "0.0.0",
+  "description": "aoc-app-template",
+  "scripts": {
+    "start": "concurrently \"npm start --prefix app-client\" \"npm run --prefix app-server dev\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atlantis-of-code/aoc-app-template.git"
+  },
+  "keywords": [
+    "aoc",
+    "app",
+    "template",
+    "angular",
+    "nodejs",
+    "postgresql"
+  ],
+  "author": "atlantis of code",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atlantis-of-code/aoc-app-template/issues"
+  },
+  "homepage": "https://github.com/atlantis-of-code/aoc-app-template#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
