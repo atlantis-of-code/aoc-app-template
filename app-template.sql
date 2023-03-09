@@ -22,3 +22,10 @@ create table users.user
   full_name       text
 )
   inherits (meta);
+
+-- add pgcrypto extension to database
+create extension if not exists pgcrypto;
+
+-- add a user named "dev" with password "dev"
+insert into users.user (username, email, pass)
+values ('dev', 'dev@mail.to', crypt('dev', 'bf'));
