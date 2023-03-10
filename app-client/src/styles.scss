@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Add only application styles, not framework:
+
+body aoc-ui-app {
+
+  // Login:
+
+  aoc-login {
+    background-attachment: fixed;
+    background-color: #EEEEFF;
+    background-image: url('./assets/background.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}

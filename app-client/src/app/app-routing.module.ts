@@ -4,6 +4,7 @@ import { AocLoginComponent } from '@atlantis-of-code/aoc-client/components/aoc-l
 import { AocTabConfig } from '@atlantis-of-code/aoc-client/core/configs';
 import { AocAuthGuard, AocLoginGuard } from '@atlantis-of-code/aoc-client/core/guards';
 import { of } from 'rxjs';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -18,14 +19,14 @@ const routes: Routes = [
     path: '',
     canActivate: [AocAuthGuard],
     children: [
-      /*{ // DASHBOARD
+      { // DASHBOARD
         path: 'dashboard',
         component: DashboardComponent,
         data: {
           title: of('Dashboard'),
           closable: false
         } as AocTabConfig
-      }*/
+      },
       {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
       {path: '**', redirectTo: 'dashboard', pathMatch: 'full'}
     ]
