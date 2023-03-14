@@ -1,5 +1,5 @@
 {
-  "$schema": "../../aoc/aoc-server/aoc-server-config.schema.json",
+  "$schema": "node_modules/@atlantis-of-code/aoc-server/aoc-server-config.schema.json",
   "base": {
     "appId": "appTemplate",
     "programName": "App Template",
