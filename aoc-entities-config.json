@@ -1,5 +1,5 @@
 {
-  "$schema": "../aoc/aoc-cli/src/lib/entity-generator/config/aoc-entities-config.schema.json",
+  "$schema": "node_modules/@atlantis-of-code/aoc-cli/dist/lib/entity-generator/config/aoc-entities-config.schema.json",
   "schemas": ["users"],
   "entityBaseClass": {
     "name": "AppTemplateEntity",
