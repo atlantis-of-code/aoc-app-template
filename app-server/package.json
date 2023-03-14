@@ -1,7 +1,6 @@
 {
   "name": "app-server",
   "version": "0.0.0",
-  "description": "Aoc app template (server)",
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js | pino-pretty --translateTime --messageKey message",
