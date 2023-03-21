@@ -1,5 +1,7 @@
--- creates empty database
-create database 'app-template';
+-- -- creates empty database
+-- create database 'app-template';
+-- -- add pgcrypto extension to database
+-- create extension if not exists pgcrypto;
 
 -- create table for common metadata that other tables will inherit
 create table public.meta (
@@ -22,9 +24,6 @@ create table users.user
   full_name       text
 )
   inherits (meta);
-
--- add pgcrypto extension to database
-create extension if not exists pgcrypto;
 
 -- add a user named "dev" with password "dev"
 insert into users.user (username, email, pass)
