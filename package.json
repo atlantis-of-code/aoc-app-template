@@ -4,6 +4,7 @@
   "description": "aoc-app-template",
   "scripts": {
     "start": "concurrently \"npm start --prefix app-client\" \"npm run --prefix app-server dev\"",
+    "update:all": "npm update --fund=false && npm update --fund=false --prefix app-client && npm update --fund=false --prefix app-server && npm update --fund=false --prefix aoc-common",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
