@@ -27,6 +27,10 @@ const routes: Routes = [
           closable: false
         } as AocTabConfig
       },
+      {
+        path: 'users',
+        loadChildren: () => import('./features/schemas/users/users.module').then(m => m.UsersModule)
+      },
       {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
       {path: '**', redirectTo: 'dashboard', pathMatch: 'full'}
     ]
