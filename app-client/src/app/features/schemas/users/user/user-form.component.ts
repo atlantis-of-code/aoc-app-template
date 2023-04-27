@@ -9,7 +9,7 @@ import { AocUiFormModule } from '@atlantis-of-code/aoc-client/ui/form/aoc-ui-for
 import { AocUiInputGroupModule } from '@atlantis-of-code/aoc-client/ui/form/aoc-ui-input-group';
 import { AocUiInputTextModule } from '@atlantis-of-code/aoc-client/ui/form/aoc-ui-input-text';
 import { UserModelConfig } from '../../../../model-configs/users/user-model-config';
-import { User } from '../../../../models/users/user';
+import { AocUser } from '../../../../models/users/aoc-user';
 
 @Component({
   standalone: true,
@@ -47,23 +47,23 @@ import { User } from '../../../../models/users/user';
 })
 export class UserFormComponent implements OnInit {
 
-  protected UserModelClass = User;
-  protected formGroup: FormGroup<AocFormGroupType<User>>;
-  protected user: User;
+  protected UserModelClass = AocUser;
+  protected formGroup: FormGroup<AocFormGroupType<AocUser>>;
+  protected user: AocUser;
   protected passwordPlaceholder = 'Assign password...';
   protected passwordType: 'password' | 'text' = 'password';
 
-  protected restOptions: AocRestOptions<User> = {
-    fields: [ User.field.USERNAME, User.field.FULL_NAME, User.field.EMAIL ]
+  protected restOptions: AocRestOptions<AocUser> = {
+    fields: [ AocUser.field.USERNAME, AocUser.field.FULL_NAME, AocUser.field.EMAIL ]
   };
 
   constructor(
     protected modelConfig: UserModelConfig,
-    private aocFormController: AocFormController<User>
+    private aocFormController: AocFormController<AocUser>
   ) {}
 
   ngOnInit() {
-    this.formGroup = new FormGroup<AocFormGroupType<User>>({
+    this.formGroup = new FormGroup<AocFormGroupType<AocUser>>({
       username: new FormControl(null, Validators.required),
       full_name: new FormControl(),
       pass: new FormControl(null),

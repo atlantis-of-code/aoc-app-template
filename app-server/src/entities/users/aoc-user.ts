@@ -5,8 +5,8 @@ import {
 // AppTemplateEntity import
 import { AppTemplateEntity } from '../app-template-entity';
 
-@Entity({ tableName: 'users.user' })
-export class User extends AppTemplateEntity {
+@Entity({ tableName: 'users.aoc_user' })
+export class AocUser extends AppTemplateEntity {
 
   static field = {
     EMAIL: 'email',

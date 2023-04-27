@@ -1,7 +1,7 @@
 // AppTemplateModel import
 import { AppTemplateModel } from '../app-template-model';
 
-export class User extends AppTemplateModel {
+export class AocUser extends AppTemplateModel {
 
   static field = {
     EMAIL: 'email',

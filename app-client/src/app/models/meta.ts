@@ -1,11 +1,11 @@
 import { AocModelMetaMap } from '@atlantis-of-code/aoc-client/core/models';
 
-import { User } from './users/user';
+import { AocUser } from './users/aoc-user';
 
 export const meta: AocModelMetaMap = new Map();
 
-meta.set(User, {
-  tableName: 'users.user',
+meta.set(AocUser, {
+  tableName: 'users.aoc_user',
   fields: {
     email: { type: 'string', isEntity: false, isCollection: false, isEmbedded: false, },
     full_name: { type: 'string', isEntity: false, isCollection: false, isEmbedded: false, },
@@ -13,5 +13,4 @@ meta.set(User, {
     username: { type: 'string', isEntity: false, isCollection: false, isEmbedded: false, },
   }
 });
-
 

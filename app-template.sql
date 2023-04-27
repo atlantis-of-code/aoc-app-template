@@ -15,16 +15,15 @@ create table public.meta (
 create schema users;
 
 -- create table users.user
-create table users.user
+create table users."aoc_user"
 (
-  id              bigserial                                                primary key,
-  username        text                                                     not null,
-  email           text                                                     not null,
-  pass            text                                                     not null,
-  full_name       text
-)
-  inherits (meta);
+  id        bigserial primary key,
+  username  text not null,
+  email     text not null,
+  pass      text not null,
+  full_name text
+) inherits (public.meta);
 
 -- add a user named "dev" with password "dev"
-insert into users.user (username, email, pass)
+insert into users."aoc_user" (username, email, pass)
 values ('dev', 'dev@mail.to', crypt('dev', gen_salt('bf')));

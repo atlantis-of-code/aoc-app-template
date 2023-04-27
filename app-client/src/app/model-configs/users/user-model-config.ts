@@ -7,12 +7,12 @@ import {
   AocModelConfigFormPath,
   AocModelConfigName
 } from '@atlantis-of-code/aoc-client/core/configs';
-import { User } from '../../models/users/user';
+import { AocUser } from '../../models/users/aoc-user';
 
 @Injectable({ providedIn: 'root' })
-export class UserModelConfig extends AocModelConfig<User> {
+export class UserModelConfig extends AocModelConfig<AocUser> {
   constructor() {
-    super(User);
+    super(AocUser);
   }
 
   readonly name: AocModelConfigName = {
@@ -25,5 +25,5 @@ export class UserModelConfig extends AocModelConfig<User> {
 
   readonly allow: AocModelConfigAllow = 'all';
 
-  readonly format: AocModelConfigFormat<User> = u => u.full_name ?? u.username;
+  readonly format: AocModelConfigFormat<AocUser> = u => u.full_name ?? u.username;
 }

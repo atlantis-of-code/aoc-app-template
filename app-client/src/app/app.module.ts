@@ -8,7 +8,7 @@ import { Config } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { User } from './models/users/user';
+import { AocUser } from './models/users/aoc-user';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { User } from './models/users/user';
     AocDirectivesModule,
     AocAppModule.forRoot(
       Config,
-      new AocUserConfig(User, { fieldMap: { username: 'username', password: 'pass' }}),
+      new AocUserConfig(AocUser, { fieldMap: { username: 'username', password: 'pass' }}),
       {
         autoConvertEmptyStringsToNullInControls: true,
         autoTrimStringsInControls: true,

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AocGridColumn } from '@atlantis-of-code/aoc-client/core/types';
-import { User } from '../../../../models/users/user';
+import { AocUser } from '../../../../models/users/aoc-user';
 import { UserModelConfig } from '../../../../model-configs/users/user-model-config';
 import { AocGridModule } from '@atlantis-of-code/aoc-client/components/aoc-grid';
 import { AocUiWindowDynRef } from '@atlantis-of-code/aoc-client/ui/overlay/aoc-ui-window';
@@ -20,10 +20,10 @@ import { CommonModule } from '@angular/common';
   `
 })
 export class UserGridComponent implements OnInit {
-  protected columns: AocGridColumn<User>[];
+  protected columns: AocGridColumn<AocUser>[];
 
-  protected restOptions: AocRestOptions<User> = {
-    fields: [ User.field.USERNAME, User.field.FULL_NAME, User.field.EMAIL ]
+  protected restOptions: AocRestOptions<AocUser> = {
+    fields: [ AocUser.field.USERNAME, AocUser.field.FULL_NAME, AocUser.field.EMAIL ]
   }
 
   constructor(
@@ -35,17 +35,17 @@ export class UserGridComponent implements OnInit {
     this.columns = [
       {
         header: 'User name',
-        display: User.field.USERNAME,
+        display: AocUser.field.USERNAME,
         defaultSort: 'asc',
         size: '15rem'
       },
       {
         header: 'Full name',
-        display: User.field.FULL_NAME
+        display: AocUser.field.FULL_NAME
       },
       {
         header: 'E-mail',
-        display: User.field.EMAIL
+        display: AocUser.field.EMAIL
       },
     ];
     this.aocUiWindowDynRef.header('Application user panel');
