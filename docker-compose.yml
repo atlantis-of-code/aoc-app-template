@@ -1,0 +1,21 @@
+version: "2"
+services:
+  aoc-app-template:
+    image: aoc-app-template
+    build: .
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      # - AOC_CONFIG_ENV=
+      - NODE_ENV=production
+      - TZ=Europe/Madrid
+  db:
+    env_file:
+      - docker-secrets.env
+    image: postgres:latest # https://github.com/docker-library/docs/blob/master/postgres/README.md
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: ${PG_PASSWORD}
+    volumes:
+      - "./postgresqldata:/var/lib/postgresql/data"

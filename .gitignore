@@ -1,6 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 aoc-entities-secrets.json
+docker-secrets.env
+postgresqldata
 
 # compiled output
 /dist
