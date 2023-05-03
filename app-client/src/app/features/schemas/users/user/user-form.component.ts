@@ -8,7 +8,7 @@ import { AocUiButtonModule } from '@atlantis-of-code/aoc-client/ui/button/aoc-ui
 import { AocUiFormModule } from '@atlantis-of-code/aoc-client/ui/form/aoc-ui-form';
 import { AocUiInputGroupModule } from '@atlantis-of-code/aoc-client/ui/form/aoc-ui-input-group';
 import { AocUiInputTextModule } from '@atlantis-of-code/aoc-client/ui/form/aoc-ui-input-text';
-import { UserModelConfig } from '../../../../model-configs/users/user-model-config';
+import { AocUserModelConfig } from '../../../../model-configs/users/aoc-user-model-config';
 import { AocUser } from '../../../../models/users/aoc-user';
 
 @Component({
@@ -58,7 +58,7 @@ export class UserFormComponent implements OnInit {
   };
 
   constructor(
-    protected modelConfig: UserModelConfig,
+    protected modelConfig: AocUserModelConfig,
     private aocFormController: AocFormController<AocUser>
   ) {}
 

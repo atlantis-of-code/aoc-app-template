@@ -10,7 +10,7 @@ import {
 import { AocUser } from '../../models/users/aoc-user';
 
 @Injectable({ providedIn: 'root' })
-export class UserModelConfig extends AocModelConfig<AocUser> {
+export class AocUserModelConfig extends AocModelConfig<AocUser> {
   constructor() {
     super(AocUser);
   }

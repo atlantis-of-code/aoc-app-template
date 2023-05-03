@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AocGridColumn } from '@atlantis-of-code/aoc-client/core/types';
 import { AocUser } from '../../../../models/users/aoc-user';
-import { UserModelConfig } from '../../../../model-configs/users/user-model-config';
+import { AocUserModelConfig } from '../../../../model-configs/users/aoc-user-model-config';
 import { AocGridModule } from '@atlantis-of-code/aoc-client/components/aoc-grid';
 import { AocUiWindowDynRef } from '@atlantis-of-code/aoc-client/ui/overlay/aoc-ui-window';
 import { AocRestOptions } from '@atlantis-of-code/aoc-client/aoc-common';
@@ -27,7 +27,7 @@ export class UserGridComponent implements OnInit {
   }
 
   constructor(
-    protected modelConfig: UserModelConfig,
+    protected modelConfig: AocUserModelConfig,
     private aocUiWindowDynRef: AocUiWindowDynRef
   ) {}
 
