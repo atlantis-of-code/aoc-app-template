@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AocUserConfig } from '@atlantis-of-code/aoc-client/aoc-common';
-import { AocAppModule } from '@atlantis-of-code/aoc-client/components/aoc-app';
+import { AocAppInitializerFactory, AocAppModule } from '@atlantis-of-code/aoc-client/components/aoc-app';
 import { AocDirectivesModule } from '@atlantis-of-code/aoc-client/core/directives';
 import { Config } from '../environments/environment';
 
@@ -36,7 +36,9 @@ import { AocUser } from './models/users/aoc-user';
       }
     )
   ],
-  providers: [],
+  providers: [
+    { provide: APP_INITIALIZER, useFactory: AocAppInitializerFactory(Config), multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
