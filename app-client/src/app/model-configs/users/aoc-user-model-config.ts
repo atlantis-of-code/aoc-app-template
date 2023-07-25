@@ -3,8 +3,7 @@ import {
   AocGender,
   AocModelConfig,
   AocModelConfigAllow,
-  AocModelConfigFormat,
-  AocModelConfigFormPath,
+  AocModelConfigFormImport,
   AocModelConfigName
 } from '@atlantis-of-code/aoc-client/core/configs';
 import { AocUser } from '../../models/users/aoc-user';
@@ -21,9 +20,17 @@ export class AocUserModelConfig extends AocModelConfig<AocUser> {
     gender: AocGender.Masculine
   };
 
-  readonly formPath: AocModelConfigFormPath = ['users', 'user', 'form'];
+  readonly form: AocModelConfigFormImport = {
+    loadComponent: () => import('../../features/schemas/users/user/user-form.component'),
+    aocUiWindowDynConfig: {
+      width: 540,
+      height: 200
+    }
+  };
 
   readonly allow: AocModelConfigAllow = 'all';
 
-  readonly format: AocModelConfigFormat<AocUser> = u => u.full_name ?? u.username;
+  transform(aocUser: AocUser): any {
+    return aocUser?.full_name ?? aocUser?.username ?? '';
+  }
 }

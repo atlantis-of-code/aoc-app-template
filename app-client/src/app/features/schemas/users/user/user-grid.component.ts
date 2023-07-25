@@ -19,7 +19,7 @@ import { CommonModule } from '@angular/common';
     </aoc-grid>
   `
 })
-export class UserGridComponent implements OnInit {
+export default class UserGridComponent implements OnInit {
   protected columns: AocGridColumn<AocUser>[];
 
   protected restOptions: AocRestOptions<AocUser> = {

@@ -14,13 +14,13 @@
   },
   "private": true,
   "dependencies": {
-    "@atlantis-of-code/aoc-server": "^0.3.0-dev.192",
+    "@atlantis-of-code/aoc-server": "^0.3.0",
     "@mikro-orm/core": "^5.7.10",
     "@mikro-orm/postgresql": "^5.7.10",
+    "app-common": "file:../app-common",
     "big.js": "^6.2.1",
     "express": "^4.18.2",
     "express-async-errors": "^3.1.1",
-    "app-common": "file:../app-common",
     "pino-pretty": "^9.4.0"
   },
   "devDependencies": {
@@ -36,9 +36,18 @@
     "execMap": {
       "ts": "ts-node --files --transpile-only -r tsconfig-paths/register"
     },
-    "ignore": ["test/**/*.ts", "test/**/*.spec.ts", ".git"],
+    "ignore": [
+      "test/**/*.ts",
+      "test/**/*.spec.ts",
+      ".git"
+    ],
     "ignoreRoot": [],
-    "watch": ["src", "aoc-server-config.json", "../../aoc/aoc-server/src", "../../aoc/aoc-common/src"],
+    "watch": [
+      "src",
+      "aoc-server-config.json",
+      "../../aoc/aoc-server/src",
+      "../../aoc/aoc-common/src"
+    ],
     "ext": "ts,js,json,yaml,yml,pug"
   }
 }

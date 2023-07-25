@@ -45,7 +45,7 @@ import { AocUser } from '../../../../models/users/aoc-user';
     </aoc-form>
   `
 })
-export class UserFormComponent implements OnInit {
+export default class UserFormComponent implements OnInit {
 
   protected UserModelClass = AocUser;
   protected formGroup: FormGroup<AocFormGroupType<AocUser>>;
