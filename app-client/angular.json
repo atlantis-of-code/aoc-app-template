@@ -63,6 +63,14 @@
                 }
               ],
               "outputHashing": "all",
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": false
+              },
               "styles": [
                 "node_modules/@atlantis-of-code/aoc-client/aoc.min.css",
                 "node_modules/material-symbols/rounded.css",
