@@ -2,21 +2,22 @@
 import { AppTemplateModel } from '../app-template-model';
 
 export class AocUser extends AppTemplateModel {
-
-  static field = {
+  //region Field names
+  static readonly field = {
     EMAIL: 'email',
     FULL_NAME: 'full_name',
     PASS: 'pass',
     USERNAME: 'username',
   };
+  //endregion
 
-
-
-  // Fields
-
+  //region Fields
   email!: string;
   full_name?: string;
   pass!: string;
   username!: string;
+  //endregion
 
+  //region CUSTOM
+  //endregion
 }
