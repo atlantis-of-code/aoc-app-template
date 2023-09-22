@@ -31,7 +31,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "localize": true,
+            "localize": false, // ["es"] // ["en"] // ... // true
             "inlineStyleLanguage": "scss",
             "allowedCommonJsDependencies": [
               "big.js",
