@@ -1,0 +1,54 @@
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" target-language="es" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="APP_MODEL_AOCUSER_SINGULAR" datatype="html">
+        <source>user</source>
+        <target state="new">usuario</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/models/users/aoc-user.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="APP_MODEL_AOCUSER_PLURAL" datatype="html">
+        <source>users</source>
+        <target state="new">usuarios</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/models/users/aoc-user.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="APP_MODEL_AOCUSER_FIELD_EMAIL" datatype="html">
+        <source>email</source>
+        <target state="new">email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/models/users/aoc-user.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="APP_MODEL_AOCUSER_FIELD_FULL_NAME" datatype="html">
+        <source>full name</source>
+        <target state="new">nombre completo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/models/users/aoc-user.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="APP_MODEL_AOCUSER_FIELD_PASS" datatype="html">
+        <source>password</source>
+        <target state="new">contraseña</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/models/users/aoc-user.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="APP_MODEL_AOCUSER_FIELD_USERNAME" datatype="html">
+        <source>user name</source>
+        <target state="new">nombre de usuario</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/models/users/aoc-user.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

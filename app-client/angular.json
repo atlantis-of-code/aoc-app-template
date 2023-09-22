@@ -10,6 +10,15 @@
           "style": "scss"
         }
       },
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "es": [
+            "src/locales/aoc-client-EN_ES.xlf",
+            "src/locales/messages.es.xlf"
+          ]
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -22,6 +31,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "localize": true,
             "inlineStyleLanguage": "scss",
             "allowedCommonJsDependencies": [
               "big.js",
@@ -104,9 +114,13 @@
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "builder": "ng-extract-i18n-merge:ng-extract-i18n-merge",
           "options": {
-            "browserTarget": "app-client:build"
+            "browserTarget": "app-client:build",
+            "format": "xlf2",
+            "outputPath": "src/locales",
+            "targetFiles": ["messages.es.xlf"],
+            "sourceFile": "../../messages.xlf"
           }
         },
         "test": {
