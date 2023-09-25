@@ -1,5 +1,5 @@
-// AppTemplateModel import
 import { AocModelI18n } from '@atlantis-of-code/aoc-client/core/models';
+// AppTemplateModel import
 import { AppTemplateModel } from '../app-template-model';
 
 export class AocUser extends AppTemplateModel {
@@ -26,12 +26,14 @@ export class AocUser extends AppTemplateModel {
     g: {
       en: 'm'
     },
-    EMAIL: $localize`:@@APP_MODEL_AOCUSER_FIELD_EMAIL:email`,
-    FULL_NAME: $localize`:@@APP_MODEL_AOCUSER_FIELD_FULL_NAME:full name`,
-    PASS: $localize`:@@APP_MODEL_AOCUSER_FIELD_PASS:password`,
-    USERNAME: $localize`:@@APP_MODEL_AOCUSER_FIELD_USERNAME:user name`
+    //region Fields for i18n (1 field per line)
+    EMAIL: $localize`:@@APP_MODEL_AOCUSER_FIELD_EMAIL:Email`,
+    FULL_NAME: $localize`:@@APP_MODEL_AOCUSER_FIELD_FULL_NAME:Full name`,
+    PASS: $localize`:@@APP_MODEL_AOCUSER_FIELD_PASS:Pass`,
+    USERNAME: $localize`:@@APP_MODEL_AOCUSER_FIELD_USERNAME:Username`,
+    //endregion Fields for i18n
   }
-  //endregion
+  //endregion I18N
 
   //region CUSTOM
   // TODO: Implement your own toString method

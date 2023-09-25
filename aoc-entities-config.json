@@ -17,5 +17,6 @@
   },
   "modelTargetPath": ".\\app-client\\src\\app\\models",
   "modelConfigTargetPath": ".\\app-client\\src\\app\\model-configs",
-  "entityTargetPath": ".\\app-server\\src\\entities"
+  "entityTargetPath": ".\\app-server\\src\\entities",
+  "localize": true
 }
