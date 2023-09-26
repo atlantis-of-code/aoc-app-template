@@ -36,9 +36,8 @@ export class AocUser extends AppTemplateModel {
   //endregion I18N
 
   //region CUSTOM
-  // TODO: Implement your own toString method
   toString(): string {
-    return `AocUser_${this.id}`;
+    return this.full_name ?? this.username ?? '';
   }
   //endregion
 }

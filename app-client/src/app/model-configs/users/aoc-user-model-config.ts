@@ -17,7 +17,6 @@ export class AocUserModelConfig extends AocModelConfig<AocUser> {
     super(AocUser);
   }
 
-
   // Default read, write, delete and clone permissions
   readonly allow: AocModelConfigAllow = 'all';
 
@@ -45,6 +44,6 @@ export class AocUserModelConfig extends AocModelConfig<AocUser> {
 
   // This method is compatible with Angular Pipe, so the model config can be also used as a @Pipe
   transform(aocUser: AocUser): string {
-    return aocUser?.full_name ?? aocUser?.username ?? '';
+    return aocUser.toString();
   }
 }
