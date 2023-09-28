@@ -1,4 +1,4 @@
-import { AocModelI18n } from '@atlantis-of-code/aoc-client/core/models';
+import { AocGender } from '@atlantis-of-code/aoc-client/core/models';
 // AppTemplateModel import
 import { AppTemplateModel } from '../app-template-model';
 
@@ -20,12 +20,10 @@ export class AocUser extends AppTemplateModel {
   //endregion
 
   //region I18N
-  static readonly i18n: AocModelI18n = {
+  static readonly i18n = {
     s: $localize`:@@APP_MODEL_AOCUSER_SINGULAR:user`,
     p: $localize`:@@APP_MODEL_AOCUSER_PLURAL:users`,
-    g: {
-      en: 'm'
-    },
+    g: AocGender.Masculine,
     //region Fields for i18n (1 field per line)
     EMAIL: $localize`:@@APP_MODEL_AOCUSER_FIELD_EMAIL:Email`,
     FULL_NAME: $localize`:@@APP_MODEL_AOCUSER_FIELD_FULL_NAME:Full name`,
