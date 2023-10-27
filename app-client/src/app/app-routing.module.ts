@@ -29,7 +29,7 @@ const routes: Routes = [
       },
       {
         path: 'users',
-        loadChildren: () => import('./features/schemas/users/users.module').then(m => m.UsersModule)
+        loadChildren: () => import('./features/schemas/users/users.module')
       },
       {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
       {path: '**', redirectTo: 'dashboard', pathMatch: 'full'}
