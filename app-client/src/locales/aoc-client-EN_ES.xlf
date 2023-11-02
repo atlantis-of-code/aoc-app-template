@@ -188,18 +188,74 @@
           <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="AOC_ERROR_HTTP_ERROR_LABEL" datatype="html">
-        <source>Http error response</source><target>Respuesta de error http</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/aoc-client/components/aoc-error/aoc-error.component.html</context>
-          <context context-type="linenumber">10</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="AOC_ERROR_DATE_TIME_LABEL" datatype="html">
         <source>Date and time</source><target>Fecha y hora</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-error/aoc-error.component.html</context>
-          <context context-type="linenumber">13</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AOC_ERROR_HTTP_ERROR_LABEL" datatype="html">
+        <source>Http error response</source><target>Respuesta de error http</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/aoc-client/components/aoc-error/aoc-error.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AOC_ERROR_COPY_TO_CLIPBOARD" datatype="html">
+        <source>Copy to clipboard</source><target>Copiar a portapapeles</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/aoc-client/components/aoc-error/aoc-error.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AOC_ERROR_SEND_REPORT" datatype="html">
+        <source>Send report</source><target>Enviar informe</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/aoc-client/components/aoc-error/aoc-error.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AOC_ERROR_CLOSE_LABEL" datatype="html">
+        <source>Close</source><target>Cerrar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/aoc-client/components/aoc-error/aoc-error.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AOC_ERROR_SHOW_DETAILS" datatype="html">
+        <source>Show details</source><target>Mostrar detalles</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/aoc-client/components/aoc-error/aoc-error.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AOC_ERROR_HIDE_DETAILS" datatype="html">
+        <source>Hide details</source><target>Ocultar detalles</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/aoc-client/components/aoc-error/aoc-error.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AOC_ERROR_ERROR_COPIED_TO_CLIPBOARD" datatype="html">
+        <source>Error report copied to clipboard</source><target>Informe de error copiado a portapapeles</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/aoc-client/components/aoc-error/aoc-error.component.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AOC_ERROR_ERROR_REPORT_SENT" datatype="html">
+        <source>Error report sent</source><target>Informe de error enviado</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/aoc-client/components/aoc-error/aoc-error.component.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AOC_ERROR_ERROR_REPORT_COULD_NOT_BE_SENT" datatype="html">
+        <source>Error report could not be sent</source><target>El informe de error no se pudo enviar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/aoc-client/components/aoc-error/aoc-error.component.ts</context>
+          <context context-type="linenumber">66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_FORM_DELETE_BUTTON" datatype="html">
