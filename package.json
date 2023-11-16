@@ -1,6 +1,6 @@
 {
   "name": "aoc-app-template",
-  "version": "0.0.0",
+  "version": "0.5.0",
   "description": "aoc-app-template",
   "scripts": {
     "start": "concurrently \"npm start --prefix app-client\" \"npm run --prefix app-server dev\"",

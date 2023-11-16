@@ -1,6 +1,6 @@
 {
   "name": "app-server",
-  "version": "0.0.0",
+  "version": "0.5.0",
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js | pino-pretty --translateTime --messageKey message",
@@ -14,7 +14,7 @@
   },
   "private": true,
   "dependencies": {
-    "@atlantis-of-code/aoc-server": "^0.3.0",
+    "@atlantis-of-code/aoc-server": "^0.5.0-dev.0",
     "@mikro-orm/core": "^5.7.10",
     "@mikro-orm/postgresql": "^5.7.10",
     "app-common": "file:../app-common",
