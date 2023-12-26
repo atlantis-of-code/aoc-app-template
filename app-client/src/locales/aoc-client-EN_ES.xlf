@@ -6,42 +6,56 @@
         <source>Change password</source><target>Cambiar contraseña</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-app/aoc-app.component.ts</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_HEADER_ABOUT" datatype="html">
         <source>About</source><target>Acerca de</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-app/aoc-app.component.ts</context>
-          <context context-type="linenumber">48</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AOC_VERSION_ABOUT_HEADER" datatype="html">
+        <source>About</source><target>Acerca de</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/aoc-client/components/aoc-app/aoc-app.component.ts</context>
+          <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_HEADER_LOG_OUT" datatype="html">
         <source>Log out</source><target>Salir</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-app/aoc-app.component.ts</context>
-          <context context-type="linenumber">58</context>
+          <context context-type="linenumber">67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_HEADER_DEVELOPMENT" datatype="html">
         <source>Development</source><target>Desarrollo</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-app/aoc-app.component.ts</context>
-          <context context-type="linenumber">138</context>
+          <context context-type="linenumber">149</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_CHANGE_PASSWORD_HEADER" datatype="html">
         <source>Change password for '<x id="PH" equiv-text="(this.aocLoginService.getUser&lt;AocModel&gt;() ?? ({} as any))[&#xA;          this.userConfig?.config?.fieldMap?.username ?? 'username'&#xA;        ]" />'</source><target>Cambiar contraseña de «<x id="PH" equiv-text="(this.aocLoginService.getUser&lt;AocModel&gt;() ?? ({} as any))[&#xA;          this.userConfig?.config?.fieldMap?.username ?? 'username'&#xA;        ]" />»</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-app/aoc-app.component.ts</context>
-          <context context-type="linenumber">158,162</context>
+          <context context-type="linenumber">169,173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AOC_AUTOCOMPLETE_CHECKING_PERMISSIONS" datatype="html">
+        <source>Checking permissions...</source><target>Comprobando permisos...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/aoc-client/components/aoc-autocomplete/aoc-autocomplete.component.ts</context>
+          <context context-type="linenumber">188</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_AUTOCOMPLETE_ADD_NAME_MASCULINE" datatype="html">
         <source>Add <x id="PH" equiv-text="name" /></source><target>Añadir <x id="PH" equiv-text="name" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-autocomplete/aoc-autocomplete.component.ts</context>
-          <context context-type="linenumber">163</context>
+          <context context-type="linenumber">243</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Masculine singular</note>
@@ -50,7 +64,7 @@
         <source>Edit <x id="PH" equiv-text="name" /></source><target>Editar <x id="PH" equiv-text="name" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-autocomplete/aoc-autocomplete.component.ts</context>
-          <context context-type="linenumber">164</context>
+          <context context-type="linenumber">244</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Masculine singular</note>
@@ -59,7 +73,7 @@
         <source>Delete <x id="PH" equiv-text="name" /></source><target>Eliminar <x id="PH" equiv-text="name" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-autocomplete/aoc-autocomplete.component.ts</context>
-          <context context-type="linenumber">165</context>
+          <context context-type="linenumber">245</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Masculine singular</note>
@@ -68,7 +82,7 @@
         <source>Add <x id="PH" equiv-text="name" /></source><target>Añadir <x id="PH" equiv-text="name" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-autocomplete/aoc-autocomplete.component.ts</context>
-          <context context-type="linenumber">167</context>
+          <context context-type="linenumber">247</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Feminine singular</note>
@@ -77,7 +91,7 @@
         <source>Edit <x id="PH" equiv-text="name" /></source><target>Editar <x id="PH" equiv-text="name" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-autocomplete/aoc-autocomplete.component.ts</context>
-          <context context-type="linenumber">168</context>
+          <context context-type="linenumber">248</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Feminine singular</note>
@@ -86,7 +100,7 @@
         <source>Delete <x id="PH" equiv-text="name" /></source><target>Eliminar <x id="PH" equiv-text="name" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-autocomplete/aoc-autocomplete.component.ts</context>
-          <context context-type="linenumber">169</context>
+          <context context-type="linenumber">249</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Feminine singular</note>
@@ -95,7 +109,7 @@
         <source>Add <x id="PH" equiv-text="name" /></source><target>Añadir <x id="PH" equiv-text="name" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-autocomplete/aoc-autocomplete.component.ts</context>
-          <context context-type="linenumber">171</context>
+          <context context-type="linenumber">251</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Neuter singular</note>
@@ -104,7 +118,7 @@
         <source>Edit <x id="PH" equiv-text="name" /></source><target>Editar <x id="PH" equiv-text="name" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-autocomplete/aoc-autocomplete.component.ts</context>
-          <context context-type="linenumber">172</context>
+          <context context-type="linenumber">252</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Neuter singular</note>
@@ -113,7 +127,7 @@
         <source>Delete <x id="PH" equiv-text="name" /></source><target>Eliminar <x id="PH" equiv-text="name" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-autocomplete/aoc-autocomplete.component.ts</context>
-          <context context-type="linenumber">173</context>
+          <context context-type="linenumber">253</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Neuter singular</note>
@@ -181,46 +195,39 @@
           <context context-type="linenumber">60</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="AOC_ERROR_ERROR_LABEL" datatype="html">
-        <source>Error</source><target>Error</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/aoc-client/components/aoc-error/aoc-error.component.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="AOC_ERROR_DATE_TIME_LABEL" datatype="html">
         <source>Date and time</source><target>Fecha y hora</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-error/aoc-error.component.html</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_ERROR_HTTP_ERROR_LABEL" datatype="html">
         <source>Http error response</source><target>Respuesta de error http</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-error/aoc-error.component.html</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_ERROR_COPY_TO_CLIPBOARD" datatype="html">
         <source>Copy to clipboard</source><target>Copiar a portapapeles</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-error/aoc-error.component.html</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_ERROR_SEND_REPORT" datatype="html">
         <source>Send report</source><target>Enviar informe</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-error/aoc-error.component.html</context>
-          <context context-type="linenumber">23</context>
+          <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_ERROR_CLOSE_LABEL" datatype="html">
         <source>Close</source><target>Cerrar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-error/aoc-error.component.html</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_ERROR_SHOW_DETAILS" datatype="html">
@@ -279,88 +286,95 @@
           <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="AOC_FORM_CHECKING_PERMISSIONS" datatype="html">
+        <source>Checking permissions...</source><target>Comprobando permisos...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/aoc-client/components/aoc-form/aoc-form.component.ts</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="AOC_FORM_MODIFIED_SUCCESS" datatype="html">
         <source>Modified successfully</source><target>Modificado con éxito</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-form/aoc-form.component.ts</context>
-          <context context-type="linenumber">220</context>
+          <context context-type="linenumber">233</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_FORM_CREATED_SUCCESS" datatype="html">
         <source>Created successfully</source><target>Creado con éxito</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-form/aoc-form.component.ts</context>
-          <context context-type="linenumber">221</context>
+          <context context-type="linenumber">234</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_FORM_MODIFIED_FAILURE" datatype="html">
         <source>Modification failed</source><target>Error en la modificación</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-form/aoc-form.component.ts</context>
-          <context context-type="linenumber">239</context>
+          <context context-type="linenumber">252</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_FORM_CREATED_FAILURE" datatype="html">
         <source>Failed to create</source><target>Error en la creación</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-form/aoc-form.component.ts</context>
-          <context context-type="linenumber">240</context>
+          <context context-type="linenumber">253</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_FORM_DELETED_SUCCESS" datatype="html">
         <source>Successfully deleted</source><target>Eliminado con éxito</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-form/aoc-form.component.ts</context>
-          <context context-type="linenumber">317</context>
+          <context context-type="linenumber">344</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_FORM_DELETED_FAILURE" datatype="html">
         <source>Delete error</source><target>Error en la eliminación</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-form/aoc-form.component.ts</context>
-          <context context-type="linenumber">335</context>
+          <context context-type="linenumber">362</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_FORM_CLOSE_CONFIRM" datatype="html">
         <source>Close confirmation</source><target>Confirmación de cierre</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-form/aoc-form.component.ts</context>
-          <context context-type="linenumber">371</context>
+          <context context-type="linenumber">398</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_FORM_HAS_ID" datatype="html">
         <source>You have made changes to the data. (<x id="PH" equiv-text="this.modelConfig.modelClassType.i18n.s" />). What would you like to do?</source><target>Ha realizado cambios en los datos (<x id="PH" equiv-text="this.modelConfig.modelClassType.i18n.s" />). ¿Qué desea hacer?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-form/aoc-form.component.ts</context>
-          <context context-type="linenumber">373</context>
+          <context context-type="linenumber">400</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_FORM_NO_ID" datatype="html">
         <source>The data will not be saved. What would you like to do?</source><target>Los datos no se van a guardar. ¿Qué desea hacer?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-form/aoc-form.component.ts</context>
-          <context context-type="linenumber">374</context>
+          <context context-type="linenumber">401</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_FORM_DISCARD_CLOSE" datatype="html">
         <source>Discard changes and close</source><target>Descartar cambios y cerrar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-form/aoc-form.component.ts</context>
-          <context context-type="linenumber">376</context>
+          <context context-type="linenumber">403</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_FORM_CLOSE" datatype="html">
         <source>Close without saving</source><target>Cerrar sin guardar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-form/aoc-form.component.ts</context>
-          <context context-type="linenumber">377</context>
+          <context context-type="linenumber">404</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_FORM_EDIT_NAME_MASCULINE_SINGULAR" datatype="html">
         <source>Editing <x id="PH" equiv-text="titleCasePipe.transform(&#xA;            singular&#xA;          )" /> '<x id="PH_1" equiv-text="this.modelConfig.transform(this.model)" />'</source><target>Edición de <x id="PH" equiv-text="titleCasePipe.transform(&#xA;            singular&#xA;          )" /> «<x id="PH_1" equiv-text="this.modelConfig.transform(this.model)" />»</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-form/aoc-form.component.ts</context>
-          <context context-type="linenumber">429,431</context>
+          <context context-type="linenumber">456,458</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Masculine singular</note>
@@ -369,7 +383,7 @@
         <source>Editing <x id="PH" equiv-text="titleCasePipe.transform(&#xA;            singular&#xA;          )" /> '<x id="PH_1" equiv-text="this.modelConfig.transform(this.model)" />'</source><target>Edición de <x id="PH" equiv-text="titleCasePipe.transform(&#xA;            singular&#xA;          )" /> «<x id="PH_1" equiv-text="this.modelConfig.transform(this.model)" />»</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-form/aoc-form.component.ts</context>
-          <context context-type="linenumber">433,435</context>
+          <context context-type="linenumber">460,462</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Feminine singular</note>
@@ -378,7 +392,7 @@
         <source>Editing <x id="PH" equiv-text="titleCasePipe.transform(&#xA;            singular&#xA;          )" /> '<x id="PH_1" equiv-text="this.modelConfig.transform(this.model)" />'</source><target>Edición de <x id="PH" equiv-text="titleCasePipe.transform(&#xA;            singular&#xA;          )" /> «<x id="PH_1" equiv-text="this.modelConfig.transform(this.model)" />»</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-form/aoc-form.component.ts</context>
-          <context context-type="linenumber">437,439</context>
+          <context context-type="linenumber">464,466</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Neuter singular</note>
@@ -387,7 +401,7 @@
         <source>New <x id="PH" equiv-text="singular" /></source><target>Nuevo <x id="PH" equiv-text="singular" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-form/aoc-form.component.ts</context>
-          <context context-type="linenumber">445</context>
+          <context context-type="linenumber">472</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Masculine singular</note>
@@ -396,7 +410,7 @@
         <source>New <x id="PH" equiv-text="singular" /></source><target>Nueva <x id="PH" equiv-text="singular" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-form/aoc-form.component.ts</context>
-          <context context-type="linenumber">447</context>
+          <context context-type="linenumber">474</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Feminine singular</note>
@@ -405,7 +419,7 @@
         <source>New <x id="PH" equiv-text="singular" /></source><target>Nuevo <x id="PH" equiv-text="singular" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-form/aoc-form.component.ts</context>
-          <context context-type="linenumber">449</context>
+          <context context-type="linenumber">476</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Neuter singular</note>
@@ -456,7 +470,7 @@
         <source>Delete row</source><target>Eliminar línea</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-field/aoc-grid-field.component.html</context>
-          <context context-type="linenumber">183</context>
+          <context context-type="linenumber">184</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_GRID_FIELD_NO_GROUP" datatype="html">
@@ -466,11 +480,18 @@
           <context context-type="linenumber">176</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="AOC_GRID_FIELD_CHECKING_PERMISSIONS" datatype="html">
+        <source>Checking permissions...</source><target>Comprobando permisos...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-field/aoc-grid-field.component.ts</context>
+          <context context-type="linenumber">273</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="AOC_GRID_FIELD_ERROR" datatype="html">
         <source>Error in grid field</source><target>Error en la tabla de datos</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-field/aoc-grid-field.component.ts</context>
-          <context context-type="linenumber">617</context>
+          <context context-type="linenumber">622</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_GRID_TOOLBAR_REFRESH_TOOLTIP" datatype="html">
@@ -487,11 +508,18 @@
           <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="AOC_GRID_TOOLBAR_CHECKING_PERMISSIONS" datatype="html">
+        <source>Checking permissions...</source><target>Comprobando permisos...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="AOC_GRID_TOOLBAR_ADD_NAME_LABEL_MASCULINE_SINGULAR" datatype="html">
         <source>New <x id="PH" equiv-text="singular" /></source><target>Nuevo <x id="PH" equiv-text="singular" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">68</context>
+          <context context-type="linenumber">74</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Masculine singular</note>
@@ -500,7 +528,7 @@
         <source>Delete <x id="PH" equiv-text="singular" /></source><target>Eliminar <x id="PH" equiv-text="singular" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">69</context>
+          <context context-type="linenumber">75</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Masculine singular</note>
@@ -509,7 +537,7 @@
         <source>Edit <x id="PH" equiv-text="singular" /></source><target>Editar <x id="PH" equiv-text="singular" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">70</context>
+          <context context-type="linenumber">76</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Masculine singular</note>
@@ -518,7 +546,7 @@
         <source>Clone <x id="PH" equiv-text="singular" /></source><target>Clonar <x id="PH" equiv-text="singular" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">71</context>
+          <context context-type="linenumber">77</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Masculine singular</note>
@@ -527,7 +555,7 @@
         <source>New <x id="PH" equiv-text="singular" /></source><target>Nueva <x id="PH" equiv-text="singular" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">73</context>
+          <context context-type="linenumber">79</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Feminine singular</note>
@@ -536,7 +564,7 @@
         <source>Delete <x id="PH" equiv-text="singular" /></source><target>Eliminar <x id="PH" equiv-text="singular" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">74</context>
+          <context context-type="linenumber">80</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Feminine singular</note>
@@ -545,7 +573,7 @@
         <source>Edit <x id="PH" equiv-text="singular" /></source><target>Editar <x id="PH" equiv-text="singular" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">75</context>
+          <context context-type="linenumber">81</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Feminine singular</note>
@@ -554,7 +582,7 @@
         <source>Clone <x id="PH" equiv-text="singular" /></source><target>Clonar <x id="PH" equiv-text="singular" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">76</context>
+          <context context-type="linenumber">82</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Feminine singular</note>
@@ -563,7 +591,7 @@
         <source>New <x id="PH" equiv-text="singular" /></source><target>Nuevo <x id="PH" equiv-text="singular" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">78</context>
+          <context context-type="linenumber">84</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Neuter singular</note>
@@ -572,7 +600,7 @@
         <source>Delete <x id="PH" equiv-text="singular" /></source><target>Eliminar <x id="PH" equiv-text="singular" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">79</context>
+          <context context-type="linenumber">85</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Neuter singular</note>
@@ -581,7 +609,7 @@
         <source>Edit <x id="PH" equiv-text="singular" /></source><target>Editar <x id="PH" equiv-text="singular" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">80</context>
+          <context context-type="linenumber">86</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Neuter singular</note>
@@ -590,7 +618,7 @@
         <source>Clone <x id="PH" equiv-text="singular" /></source><target>Clonar <x id="PH" equiv-text="singular" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">81</context>
+          <context context-type="linenumber">87</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Neuter singular</note>
@@ -599,14 +627,14 @@
         <source>Object information</source><target>Información del objeto</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">83</context>
+          <context context-type="linenumber">89</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_GRID_TOOLBAR_ADD_NAME_TOOLTIP_MASCULINE_SINGULAR" datatype="html">
         <source>Add new <x id="PH" equiv-text="singular" /></source><target>Añadir <x id="PH" equiv-text="singular" /> nuevo</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">87</context>
+          <context context-type="linenumber">93</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Masculine singular</note>
@@ -615,7 +643,7 @@
         <source>Delete selected <x id="PH" equiv-text="singular" /></source><target>Eliminar <x id="PH" equiv-text="singular" /> seleccionado</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">88</context>
+          <context context-type="linenumber">94</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Masculine singular</note>
@@ -624,7 +652,7 @@
         <source>Edit selected <x id="PH" equiv-text="singular" /></source><target>Editar <x id="PH" equiv-text="singular" /> seleccionado</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">89</context>
+          <context context-type="linenumber">95</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Masculine singular</note>
@@ -633,7 +661,7 @@
         <source>Clone selected <x id="PH" equiv-text="singular" /></source><target>Clonar <x id="PH" equiv-text="singular" /> seleccionado</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">90</context>
+          <context context-type="linenumber">96</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Masculine singular</note>
@@ -642,7 +670,7 @@
         <source>Object information about selected <x id="PH" equiv-text="singular" /></source><target>Información del <x id="PH" equiv-text="singular" /> seleccionado</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">91</context>
+          <context context-type="linenumber">97</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Masculine singular</note>
@@ -651,7 +679,7 @@
         <source>Add new <x id="PH" equiv-text="singular" /></source><target>Añadir <x id="PH" equiv-text="singular" /> nueva</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">93</context>
+          <context context-type="linenumber">99</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Feminine singular</note>
@@ -660,7 +688,7 @@
         <source>Delete selected <x id="PH" equiv-text="singular" /></source><target>Eliminar <x id="PH" equiv-text="singular" /> seleccionada</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">94</context>
+          <context context-type="linenumber">100</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Feminine singular</note>
@@ -669,7 +697,7 @@
         <source>Edit selected <x id="PH" equiv-text="singular" /></source><target>Editar <x id="PH" equiv-text="singular" /> seleccionada</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">95</context>
+          <context context-type="linenumber">101</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Feminine singular</note>
@@ -678,7 +706,7 @@
         <source>Clone selected <x id="PH" equiv-text="singular" /></source><target>Clonar <x id="PH" equiv-text="singular" /> seleccionada</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">96</context>
+          <context context-type="linenumber">102</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Feminine singular</note>
@@ -687,7 +715,7 @@
         <source>Object information about selected <x id="PH" equiv-text="singular" /></source><target>Información de la <x id="PH" equiv-text="singular" /> seleccionada</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">97</context>
+          <context context-type="linenumber">103</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Feminine singular</note>
@@ -696,7 +724,7 @@
         <source>Add new <x id="PH" equiv-text="singular" /></source><target>Añadir <x id="PH" equiv-text="singular" /> nuevo</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">99</context>
+          <context context-type="linenumber">105</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Neuter singular</note>
@@ -705,7 +733,7 @@
         <source>Delete selected <x id="PH" equiv-text="singular" /></source><target>Eliminar <x id="PH" equiv-text="singular" /> seleccionado</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">100</context>
+          <context context-type="linenumber">106</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Neuter singular</note>
@@ -714,7 +742,7 @@
         <source>Edit selected <x id="PH" equiv-text="singular" /></source><target>Editar <x id="PH" equiv-text="singular" /> seleccionado</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">101</context>
+          <context context-type="linenumber">107</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Neuter singular</note>
@@ -723,7 +751,7 @@
         <source>Clone selected <x id="PH" equiv-text="singular" /></source><target>Clonar <x id="PH" equiv-text="singular" /> seleccionado</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">102</context>
+          <context context-type="linenumber">108</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Neuter singular</note>
@@ -732,7 +760,7 @@
         <source>Object information about selected <x id="PH" equiv-text="singular" /></source><target>Información del <x id="PH" equiv-text="singular" /> seleccionado</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/components/aoc-grid/aoc-grid-toolbar/aoc-grid-toolbar.component.ts</context>
-          <context context-type="linenumber">103</context>
+          <context context-type="linenumber">109</context>
         </context-group>
         <note priority="1" from="description">Name</note>
         <note priority="1" from="meaning">Neuter singular</note>
@@ -1070,21 +1098,21 @@
         <source>A network or client error has occurred. Please try again and if the error persists contact support providing the following information:</source><target>Ocurrió un error de red o de cliente. Intente de nuevo y si el error persiste contacte con el soporte técnico proporcionando la siguiente información:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/core/services/aoc-error-dialog-queue/aoc-error-dialog-queue.service.ts</context>
-          <context context-type="linenumber">38</context>
+          <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_ERROR_SERVER" datatype="html">
         <source>An error occurred on the server. Please try again and if the error persists contact support providing the following information:</source><target>Ocurrió un error en el servidor. Intente de nuevo y si el error persiste contacte con el soporte técnico proporcionando la siguiente información:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/core/services/aoc-error-dialog-queue/aoc-error-dialog-queue.service.ts</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_VERSION_HEADER" datatype="html">
         <source>Server version has changed</source><target>El servidor ha cambiado de versión</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/core/services/aoc-version/aoc-version.service.ts</context>
-          <context context-type="linenumber">52</context>
+          <context context-type="linenumber">55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_VERSION_MESSAGE" datatype="html">
@@ -1101,44 +1129,21 @@ Versión <x id="PH_2" equiv-text="this.aocConfig.APP_NAME" /> actual: <x id="PH_
 </target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/core/services/aoc-version/aoc-version.service.ts</context>
-          <context context-type="linenumber">54,59</context>
+          <context context-type="linenumber">57,62</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_VERSION_OK" datatype="html">
         <source>Reload application</source><target>Recargar aplicación</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/core/services/aoc-version/aoc-version.service.ts</context>
-          <context context-type="linenumber">60</context>
+          <context context-type="linenumber">63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_VERSION_NOT_NOW" datatype="html">
         <source>Not now</source><target>Ahora no</target>
         <context-group purpose="location">
           <context context-type="sourcefile">projects/aoc-client/core/services/aoc-version/aoc-version.service.ts</context>
-          <context context-type="linenumber">65</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="AOC_VERSION_ABOUT_HEADER" datatype="html">
-        <source>About</source><target>Acerca de</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/aoc-client/core/services/aoc-version/aoc-version.service.ts</context>
-          <context context-type="linenumber">77</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="AOC_VERSION_ABOUT_MESSAGE" datatype="html">
-        <source>Version &lt;strong&gt;AOC&lt;/strong&gt;: <x id="PH" equiv-text="this.aocServerVersion.current" />&lt;br&gt;
-Version &lt;strong&gt;<x id="PH_1" equiv-text="this.aocConfig.APP_NAME" />&lt;/strong&gt;: <x id="PH_2" equiv-text="this.aocAppServerVersion.current" /></source><target>Versión &lt;strong&gt;AOC&lt;/strong&gt;: <x id="PH" equiv-text="this.aocServerVersion.current" />&lt;br&gt;
-Versión &lt;strong&gt;<x id="PH_1" equiv-text="this.aocConfig.APP_NAME" />&lt;/strong&gt;: <x id="PH_2" equiv-text="this.aocAppServerVersion.current" /></target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/aoc-client/core/services/aoc-version/aoc-version.service.ts</context>
-          <context context-type="linenumber">79,80</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="AOC_VERSION_ABOUT_OK" datatype="html">
-        <source>OK</source><target>Aceptar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/aoc-client/core/services/aoc-version/aoc-version.service.ts</context>
-          <context context-type="linenumber">81</context>
+          <context context-type="linenumber">68</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AOC_UI_STATUS_BAR_LOADING" datatype="html">
