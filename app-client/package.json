@@ -20,7 +20,7 @@
     "@angular/platform-browser": "^16.2.12",
     "@angular/platform-browser-dynamic": "^16.2.12",
     "@angular/router": "^16.2.12",
-    "@atlantis-of-code/aoc-client": "^0.5.0-dev.0",
+    "@atlantis-of-code/aoc-client": "^0.5.0-dev.34",
     "angular-split": "^16.2.1",
     "big.js": "^6.2.1",
     "date-fns": "^2.29.3",

@@ -22,8 +22,9 @@ export class AppComponent {
 
   headerMenu: AocUiDataMenu = [];
 
-  constructor(private logger: AocUiLoggerService) {
+  constructor(private aocModelManager: AocModelManager,
+              private logger: AocUiLoggerService) {
     this.logger.info('Starting app-client app.component.ts');
-    AocModelManager.registerMeta(meta);
+    this.aocModelManager.registerMeta(meta);
   }
 }

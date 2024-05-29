@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/atlantis-of-code/aoc-app-template#readme",
   "devDependencies": {
-    "@atlantis-of-code/aoc-cli": "^0.3.0",
+    "@atlantis-of-code/aoc-cli": "^0.5.0-dev.4",
     "concurrently": "^7.6.0"
   }
 }
