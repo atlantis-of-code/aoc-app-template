@@ -1,4 +1,4 @@
-version: "2"
+version: "3"
 services:
   aoc-app-template:
     image: aoc-app-template
@@ -9,13 +9,14 @@ services:
     environment:
       # - AOC_CONFIG_ENV=
       - NODE_ENV=production
-      - TZ=Europe/Madrid
-  db:
-    env_file:
-      - docker-secrets.env
-    image: postgres:latest # https://github.com/docker-library/docs/blob/master/postgres/README.md
-    restart: unless-stopped
-    environment:
-      POSTGRES_PASSWORD: ${PG_PASSWORD}
-    volumes:
-      - "./postgresqldata:/var/lib/postgresql/data"
+      - TZ=Europe/Madrid # Adapt according to your needs
+  #Optionally you could spawn a database container if you need
+  #db:
+  #  env_file:
+  #    - docker-secrets.env
+  #  image: postgres:latest # https://github.com/docker-library/docs/blob/master/postgres/README.md
+  #  restart: unless-stopped
+  #  environment:
+  #    POSTGRES_PASSWORD: ${PG_PASSWORD}
+  #  volumes:
+  #    - "./postgresql-data:/var/lib/postgresql/data"
