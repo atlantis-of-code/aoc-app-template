@@ -1,5 +1,5 @@
-// AppTemplateModel import
 import { AocModelI18n } from '@atlantis-of-code/aoc-client/core/models';
+// AppTemplateModel import
 import { AppTemplateModel } from '../app-template-model';
 
 export class AocUser extends AppTemplateModel {

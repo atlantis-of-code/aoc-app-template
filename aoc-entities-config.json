@@ -18,5 +18,6 @@
   "modelTargetPath": ".\\app-client\\src\\app\\models",
   "modelConfigTargetPath": ".\\app-client\\src\\app\\model-configs",
   "entityTargetPath": ".\\app-server\\src\\entities",
+  "lazy": ["users.aoc_user.pass"],
   "localize": true
 }

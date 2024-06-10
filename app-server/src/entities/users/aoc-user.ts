@@ -21,7 +21,7 @@ export class AocUser extends AppTemplateEntity {
   email!: string;
   @Property({ nullable: true })
   full_name?: string;
-  @Property()
+  @Property({ lazy: true })
   pass!: string;
   @Property()
   username!: string;
