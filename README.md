@@ -1,6 +1,6 @@
 # Aoc app template
 
-This is a template that is used to generatee a new `aoc application`.
+This is a template that is used to generate a new `aoc application`.
 
 ## Using aoc-cli (recommended)
 
