@@ -1,8 +1,11 @@
 # Base image for building
 FROM node:20-alpine AS base
 
+# Define a variable for the application name
+ARG APP_NAME=app
+
 # Set the working directory
-WORKDIR /app
+WORKDIR /${APP_NAME}
 
 # Ensure the home directory for the node user is correct
 RUN mkdir -p /home/node
@@ -10,70 +13,73 @@ RUN mkdir -p /home/node
 # Client side compilation
 FROM base AS client
 ARG configuration=production
-COPY app-client/package*.json /app/app-client/
+ARG APP_NAME
+COPY ${APP_NAME}-client/package*.json /${APP_NAME}/${APP_NAME}-client/
 # Copy .npmrc to the node user's home directory
 COPY .npmrc /home/node/.npmrc
-RUN chown -R node:node /app /home/node/.npmrc
+RUN chown -R node:node /${APP_NAME} /home/node/.npmrc
 
 # Switch to non-root user
 USER node
 
-RUN cd /app/app-common && \
+RUN cd /${APP_NAME}/${APP_NAME}-common && \
     npm ci && \
-    cd /app/app-client && \
+    cd /${APP_NAME}/${APP_NAME}-client && \
     npm install @atlantis-of-code/aoc-client@latest && \
     npm ci && \
     rm /home/node/.npmrc
-COPY app-client /app/app-client
-COPY app-common /app/app-common
-RUN cd /app/app-common && \
+COPY ${APP_NAME}-client /${APP_NAME}/${APP_NAME}-client
+COPY ${APP_NAME}-common /${APP_NAME}/${APP_NAME}-common
+RUN cd /${APP_NAME}/${APP_NAME}-common && \
     npm run build && \
     npm prune --omit=dev && \
-    cd /app/app-client && \
+    cd /${APP_NAME}/${APP_NAME}-client && \
     npm run build:$configuration && \
     npm prune --omit=dev
 
 # Server side compilation
 FROM base AS server
-COPY app-server/package*.json /app/app-server/
+ARG APP_NAME
+COPY ${APP_NAME}-server/package*.json /${APP_NAME}/${APP_NAME}-server/
 # Copy .npmrc to the node user's home directory
 COPY .npmrc /home/node/.npmrc
-RUN chown -R node:node /app /home/node/.npmrc
+RUN chown -R node:node /${APP_NAME} /home/node/.npmrc
 
 # Switch to non-root user
 USER node
 
-RUN cd /app/app-common && \
+RUN cd /${APP_NAME}/${APP_NAME}-common && \
     npm ci && \
-    cd /app/app-server && \
+    cd /${APP_NAME}/${APP_NAME}-server && \
     npm install @atlantis-of-code/aoc-server@latest && \
     npm ci && \
     rm /home/node/.npmrc
-COPY app-server /app/app-server
-RUN cd /app/app-common && \
+COPY ${APP_NAME}-server /${APP_NAME}/${APP_NAME}-server
+RUN cd /${APP_NAME}/${APP_NAME}-common && \
     npm run build && \
     npm prune --omit=dev && \
-    cd /app/app-server && \
+    cd /${APP_NAME}/${APP_NAME}-server && \
     npm run build && \
     npm prune --omit=dev
 
 # Production image
 FROM node:20-alpine AS production
+ARG APP_NAME
 
 # Set the working directory
-WORKDIR /app/app-common
-COPY --from=server /app/app-common/dist/ ./dist
-COPY --from=server /app/app-common/package.json ./package.json
-COPY --from=server /app/app-common/node_modules ./node_modules
+WORKDIR /${APP_NAME}/${APP_NAME}-common
+COPY --from=server /${APP_NAME}/${APP_NAME}-common/dist/ ./dist
+COPY --from=server /${APP_NAME}/${APP_NAME}-common/package.json ./package.json
+COPY --from=server /${APP_NAME}/${APP_NAME}-common/node_modules ./node_modules
 
-WORKDIR /app/app-server
-COPY --from=server /app/app-server/dist/ ./dist
-COPY --from=server /app/app-server/public/ ./public
-COPY --from=server /app/app-server/package.json ./package.json
-COPY --from=server /app/app-server/node_modules ./node_modules
-COPY --from=server /app/app-server/aoc-server-config.json ./aoc-server-config.json
+WORKDIR /${APP_NAME}/${APP_NAME}-server
+COPY --from=server /${APP_NAME}/${APP_NAME}-server/dist/ ./dist
+COPY --from=server /${APP_NAME}/${APP_NAME}-server/public/ ./public
+COPY --from=server /${APP_NAME}/${APP_NAME}-server/package.json ./package.json
+COPY --from=server /${APP_NAME}/${APP_NAME}-server/node_modules ./node_modules
+COPY --from=server /${APP_NAME}/${APP_NAME}-server/aoc-server-config.json ./aoc-server-config.json
 
-COPY --from=client /app/app-client/dist/app-client/es/. ./public/
+COPY --from=client /${APP_NAME}/${APP_NAME}-client/dist/${APP_NAME}-client/es/. ./public/
 
 EXPOSE 3000
 
