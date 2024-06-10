@@ -18,13 +18,20 @@ RUN chown -R node:node /app /home/node/.npmrc
 # Switch to non-root user
 USER node
 
-RUN cd /app/app-client && \
+RUN cd /app/app-common && \
+    npm ci && \
+    cd /app/app-client && \
     npm install @atlantis-of-code/aoc-client@latest && \
     npm ci && \
     rm /home/node/.npmrc
 COPY app-client /app/app-client
-RUN cd /app/app-client && \
-    npx npm run build:$configuration
+COPY app-common /app/app-common
+RUN cd /app/app-common && \
+    npm run build && \
+    npm prune --omit=dev && \
+    cd /app/app-client && \
+    npm run build:$configuration && \
+    npm prune --omit=dev
 
 # Server side compilation
 FROM base AS server
@@ -36,12 +43,17 @@ RUN chown -R node:node /app /home/node/.npmrc
 # Switch to non-root user
 USER node
 
-RUN cd /app/app-server && \
+RUN cd /app/app-common && \
+    npm ci && \
+    cd /app/app-server && \
     npm install @atlantis-of-code/aoc-server@latest && \
     npm ci && \
     rm /home/node/.npmrc
 COPY app-server /app/app-server
-RUN cd /app/app-server && \
+RUN cd /app/app-common && \
+    npm run build && \
+    npm prune --omit=dev && \
+    cd /app/app-server && \
     npm run build && \
     npm prune --omit=dev
 
@@ -49,8 +61,12 @@ RUN cd /app/app-server && \
 FROM node:20-alpine AS production
 
 # Set the working directory
-WORKDIR /app/app-server
+WORKDIR /app/app-common
+COPY --from=server /app/app-common/dist/ ./dist
+COPY --from=server /app/app-common/package.json ./package.json
+COPY --from=server /app/app-common/node_modules ./node_modules
 
+WORKDIR /app/app-server
 COPY --from=server /app/app-server/dist/ ./dist
 COPY --from=server /app/app-server/public/ ./public
 COPY --from=server /app/app-server/package.json ./package.json
@@ -58,8 +74,6 @@ COPY --from=server /app/app-server/node_modules ./node_modules
 COPY --from=server /app/app-server/aoc-server-config.json ./aoc-server-config.json
 
 COPY --from=client /app/app-client/dist/app-client/es/. ./public/
-
-RUN chown -R node:node /app
 
 EXPOSE 3000
 
