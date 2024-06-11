@@ -1,20 +1,22 @@
+# Define a variable for the application name
+ARG APP_NAME=app-template
+
 # Base image for building
 FROM node:20-alpine AS base
-
-# Define a variable for the application name
-ARG APP_NAME=app
+ARG APP_NAME
 
 # Set the working directory
 WORKDIR /${APP_NAME}
 
 # Ensure the home directory for the node user is correct
-RUN mkdir -p /home/node
+RUN mkdir -p /home/node && npm set progress=false && npm config set depth 0
 
 # Client side compilation
 FROM base AS client
 ARG configuration=production
 ARG APP_NAME
-COPY ${APP_NAME}-client/package*.json /${APP_NAME}/${APP_NAME}-client/
+COPY ${APP_NAME}-common /${APP_NAME}/${APP_NAME}-common
+COPY ${APP_NAME}-client /${APP_NAME}/${APP_NAME}-client
 # Copy .npmrc to the node user's home directory
 COPY .npmrc /home/node/.npmrc
 RUN chown -R node:node /${APP_NAME} /home/node/.npmrc
@@ -28,8 +30,6 @@ RUN cd /${APP_NAME}/${APP_NAME}-common && \
     npm install @atlantis-of-code/aoc-client@latest && \
     npm ci && \
     rm /home/node/.npmrc
-COPY ${APP_NAME}-client /${APP_NAME}/${APP_NAME}-client
-COPY ${APP_NAME}-common /${APP_NAME}/${APP_NAME}-common
 RUN cd /${APP_NAME}/${APP_NAME}-common && \
     npm run build && \
     npm prune --omit=dev && \
@@ -40,7 +40,8 @@ RUN cd /${APP_NAME}/${APP_NAME}-common && \
 # Server side compilation
 FROM base AS server
 ARG APP_NAME
-COPY ${APP_NAME}-server/package*.json /${APP_NAME}/${APP_NAME}-server/
+COPY ${APP_NAME}-common /${APP_NAME}/${APP_NAME}-common
+COPY ${APP_NAME}-server /${APP_NAME}/${APP_NAME}-server
 # Copy .npmrc to the node user's home directory
 COPY .npmrc /home/node/.npmrc
 RUN chown -R node:node /${APP_NAME} /home/node/.npmrc
@@ -54,7 +55,6 @@ RUN cd /${APP_NAME}/${APP_NAME}-common && \
     npm install @atlantis-of-code/aoc-server@latest && \
     npm ci && \
     rm /home/node/.npmrc
-COPY ${APP_NAME}-server /${APP_NAME}/${APP_NAME}-server
 RUN cd /${APP_NAME}/${APP_NAME}-common && \
     npm run build && \
     npm prune --omit=dev && \
