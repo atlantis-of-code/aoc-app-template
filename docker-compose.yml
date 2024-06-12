@@ -2,12 +2,13 @@ version: "3"
 services:
   aoc-app-template:
     image: aoc-app-template
+    container_name: aoc-app-template
     build: .
     restart: unless-stopped
     ports:
       - "3000:3000"
     environment:
-      # - AOC_CONFIG_ENV=
+      # - AOC_CONFIG_ENV= # The config key from aoc-server-config.json that will be used, "base" otherwise
       - NODE_ENV=production
       - TZ=Europe/Madrid # Adapt according to your needs
   #Optionally you could spawn a database container if you need
