@@ -1,5 +1,5 @@
 # Define a variable for the application name
-ARG APP_NAME=app-template
+ARG APP_NAME=app
 
 # Base image for building
 FROM node:20-alpine AS base
