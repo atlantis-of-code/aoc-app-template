@@ -4,6 +4,9 @@
 # Ignore log files
 **/*.log
 
+# Ignore sql directory
+sql
+
 # Ignore git repository files
 **/.git
 
