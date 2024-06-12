@@ -79,7 +79,9 @@ COPY --from=server /${APP_NAME}/${APP_NAME}-server/package.json ./package.json
 COPY --from=server /${APP_NAME}/${APP_NAME}-server/node_modules ./node_modules
 COPY --from=server /${APP_NAME}/${APP_NAME}-server/aoc-server-config.json ./aoc-server-config.json
 
-COPY --from=client /${APP_NAME}/${APP_NAME}-client/dist/${APP_NAME}-client/es/. ./public/
+COPY --from=client /${APP_NAME}/${APP_NAME}-client/dist/${APP_NAME}-client/. ./public/
+# In case of having a localized build, you can replace the above line including the locale
+# COPY --from=client /${APP_NAME}/${APP_NAME}-client/dist/${APP_NAME}-client/es/. ./public/
 
 EXPOSE 3000
 
