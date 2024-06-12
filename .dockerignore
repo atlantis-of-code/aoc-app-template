@@ -12,6 +12,7 @@
 **/.env
 
 # Ignore temporary files and directories
+**/.angular
 **/tmp
 **/build
 **/dist
