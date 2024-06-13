@@ -9,15 +9,18 @@ services:
       - "3000:3000"
     environment:
       # - AOC_CONFIG_ENV= # The config key from aoc-server-config.json that will be used, "base" otherwise
+      # And/or override specific config values
+      # - AOC_postgres_host=postgresql
+      # - AOC_postgres_port=5432
+      # - AOC_postgres_password=my_password
       - NODE_ENV=production
       - TZ=Europe/Madrid # Adapt according to your needs
   #Optionally you could spawn a database container if you need
   #db:
-  #  env_file:
-  #    - docker-secrets.env
   #  image: postgres:latest # https://github.com/docker-library/docs/blob/master/postgres/README.md
+  #  container_name: postgresql
   #  restart: unless-stopped
   #  environment:
-  #    POSTGRES_PASSWORD: ${PG_PASSWORD}
+  #    POSTGRES_PASSWORD: my_password
   #  volumes:
   #    - "./postgresql-data:/var/lib/postgresql/data"
