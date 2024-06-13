@@ -12,7 +12,6 @@ export const Config: AocAppConfig = {
   APP_ID: 'appTemplate', // Must match with server config
   PROGRAM_NAME: 'App Template',
   SERVER_URL: 'http://localhost:3000/',
-  // SERVER_URL: 'http://localhost:3000/',
   BASE_HREF: '/',
   MULTI_TENANCY: false,
   TAB_DEFAULT_MENU_ITEMS: ['/dashboard'], // Tabs to open at start
