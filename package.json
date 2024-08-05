@@ -1,6 +1,6 @@
 {
   "name": "aoc-app-template",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "aoc-app-template",
   "scripts": {
     "start": "concurrently \"npm start --prefix app-client\" \"npm run --prefix app-server dev\"",
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/atlantis-of-code/aoc-app-template#readme",
   "devDependencies": {
-    "@atlantis-of-code/aoc-cli": "^0.5.0-dev.5",
+    "@atlantis-of-code/aoc-cli": "^1.0.0",
     "concurrently": "^7.6.0"
   }
 }

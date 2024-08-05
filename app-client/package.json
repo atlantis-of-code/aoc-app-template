@@ -1,6 +1,6 @@
 {
   "name": "app-client",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -22,7 +22,7 @@
     "@angular/platform-browser": "^16.2.12",
     "@angular/platform-browser-dynamic": "^16.2.12",
     "@angular/router": "^16.2.12",
-    "@atlantis-of-code/aoc-client": "^0.5.0-dev.34",
+    "@atlantis-of-code/aoc-client": "^1.0.0",
     "angular-split": "^16.2.1",
     "big.js": "^6.2.1",
     "date-fns": "^2.29.3",

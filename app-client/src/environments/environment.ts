@@ -20,7 +20,8 @@ export const Config: AocAppConfig = {
   LOGGER: {
     level: 'DEBUG'
   },
-  PDFJS_URL: '/pdfjs-3.0.279-legacy-dist/web/viewer.html'
+  PDFJS_URL: '/pdfjs-3.0.279-legacy-dist/web/viewer.html',
+  LICENSE: ''
 };
 
 /*
