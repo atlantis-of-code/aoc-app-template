@@ -23,7 +23,7 @@
       "dom"
     ],
     "paths": {
-      "@angular/*": [
+      /*"@angular/*": [
         "node_modules/@angular/*"
       ],
       "angular-split": [
@@ -34,7 +34,7 @@
       ],
       "rxjs/*": [
         "node_modules/rxjs/*"
-      ],
+      ],*/
       "@atlantis-of-code/aoc-client": [
         "../../aoc/aoc-client/projects/aoc-client"
       ],
