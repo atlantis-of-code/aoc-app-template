@@ -23,23 +23,8 @@
       "dom"
     ],
     "paths": {
-      /*"@angular/*": [
-        "node_modules/@angular/*"
-      ],
-      "angular-split": [
-        "node_modules/angular-split"
-      ],
-      "rxjs": [
-        "node_modules/rxjs"
-      ],
-      "rxjs/*": [
-        "node_modules/rxjs/*"
-      ],*/
-      "@atlantis-of-code/aoc-client": [
-        "../../aoc/aoc-client/projects/aoc-client"
-      ],
       "@atlantis-of-code/aoc-client/*": [
-        "../../aoc/aoc-client/projects/aoc-client/*"
+        "../../aoc/aoc-client/projects/aoc-client/*/index.ts"
       ],
       "app-common": [
         "../app-common"

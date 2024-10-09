@@ -5,15 +5,13 @@ import { AocUserModelConfig } from '../../../../model-configs/users/aoc-user-mod
 import { AocGridModule } from '@atlantis-of-code/aoc-client/components/aoc-grid';
 import { AocUiWindowDynRef } from '@atlantis-of-code/aoc-client/ui/overlay/aoc-ui-window';
 import { AocRestOptions } from '@atlantis-of-code/aoc-client/aoc-common';
-import { CommonModule } from '@angular/common';
 
 @Component({
   standalone: true,
   selector: 'app-usuario-grid',
   imports: [
-    CommonModule,
     AocGridModule
-  ],
+],
   template: `
     <aoc-grid [modelConfig]="modelConfig" [columns]="columns" [restOptions]="restOptions">
     </aoc-grid>

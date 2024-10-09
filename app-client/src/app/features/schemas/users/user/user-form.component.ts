@@ -1,4 +1,4 @@
-import { NgIf } from '@angular/common';
+
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AocRestOptions } from '@atlantis-of-code/aoc-client/aoc-common';
@@ -20,10 +20,9 @@ import { AocUser } from '../../../../models/users/aoc-user';
     AocUiFormModule,
     AocUiInputTextModule,
     ReactiveFormsModule,
-    NgIf,
     AocUiInputGroupModule,
     AocUiButtonModule
-  ],
+],
   template: `
     <aoc-form [modelConfig]="modelConfig" [formGroup]="$any(formGroup)" [restOptions]="restOptions">
       <ng-template aocFormTemplate="body">
