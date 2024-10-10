@@ -8,7 +8,7 @@ import { AocRestOptions } from '@atlantis-of-code/aoc-client/aoc-common';
 
 @Component({
   standalone: true,
-  selector: 'app-usuario-grid',
+  selector: 'app-user-grid',
   imports: [
     AocGridModule
 ],

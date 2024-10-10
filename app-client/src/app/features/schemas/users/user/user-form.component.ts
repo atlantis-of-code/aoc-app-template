@@ -13,7 +13,7 @@ import { AocUser } from '../../../../models/users/aoc-user';
 
 @Component({
   standalone: true,
-  selector: 'app-usuario-form',
+  selector: 'app-user-form',
   providers: [AocFormController],
   imports: [
     AocFormModule,
@@ -24,7 +24,7 @@ import { AocUser } from '../../../../models/users/aoc-user';
     AocUiButtonModule
 ],
   template: `
-    <aoc-form [modelConfig]="modelConfig" [formGroup]="$any(formGroup)" [restOptions]="restOptions">
+    <aoc-form [modelConfig]="modelConfig" [formGroup]="formGroup" [restOptions]="restOptions">
       <ng-template aocFormTemplate="body">
         <aoc-ui-form-page>
           <aoc-ui-form-row>
