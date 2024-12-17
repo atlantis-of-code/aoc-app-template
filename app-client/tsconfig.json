@@ -24,7 +24,7 @@
     ],
     "paths": {
       "@atlantis-of-code/aoc-client/*": [
-        "../../aoc/aoc-client/projects/aoc-client/*/index.ts"
+        "../../aoc/aoc-client/projects/aoc-client/*"
       ],
       "app-common": [
         "../app-common"
