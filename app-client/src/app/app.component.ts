@@ -14,16 +14,16 @@ export class AppComponent {
     {
       label: 'Settings',
       icon: 'settings',
-      items: [
-        { label: 'Users', routerLink: ['users', 'user', 'panel' ] }
-      ]
+      items: [{ label: 'Users', routerLink: ['users', 'user', 'panel'] }]
     }
   ];
 
   headerMenu: AocUiDataMenu = [];
 
-  constructor(private aocModelManager: AocModelManager,
-              private logger: AocUiLoggerService) {
+  constructor(
+    private aocModelManager: AocModelManager,
+    private logger: AocUiLoggerService
+  ) {
     this.logger.info('Starting app-client app.component.ts');
     this.aocModelManager.registerMeta(meta);
   }

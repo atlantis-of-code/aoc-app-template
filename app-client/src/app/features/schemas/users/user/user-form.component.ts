@@ -1,4 +1,3 @@
-
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AocRestOptions } from '@atlantis-of-code/aoc-client/aoc-common';
@@ -18,26 +17,30 @@ import { AocUser } from '../../../../models/users/aoc-user';
   imports: [
     AocFormModule,
     AocUiFormModule,
-    AocUiInputTextModule,
     ReactiveFormsModule,
     AocUiInputGroupModule,
+    AocUiInputTextModule,
     AocUiButtonModule
-],
+  ],
   template: `
     <aoc-form [modelConfig]="modelConfig" [formGroup]="formGroup" [restOptions]="restOptions">
       <ng-template aocFormTemplate="body">
         <aoc-ui-form-page>
           <aoc-ui-form-row>
-            <input aocUiInputText aocUiFormField="User name" [formControlName]="UserModelClass.field.USERNAME">
+            <input aocUiInputText aocUiFormField="User name" [formControlName]="UserModelClass.field.USERNAME" />
             <aoc-ui-input-group aocUiFormRowElement="Password">
-              <input aocUiInputText [type]="passwordType" [formControlName]="UserModelClass.field.PASS"
-                     [placeholder]="passwordPlaceholder">
+              <input
+                aocUiInputText
+                [type]="passwordType"
+                [formControlName]="UserModelClass.field.PASS"
+                [placeholder]="passwordPlaceholder"
+              />
               <button aocUiButton icon="visibility" (click)="swapPasswordType($event)"></button>
             </aoc-ui-input-group>
           </aoc-ui-form-row>
           <aoc-ui-form-row>
-            <input aocUiInputText aocUiFormField="Full name" [formControlName]="UserModelClass.field.FULL_NAME">
-            <input aocUiInputText aocUiFormField="E-Mail" [formControlName]="UserModelClass.field.EMAIL">
+            <input aocUiInputText aocUiFormField="Full name" [formControlName]="UserModelClass.field.FULL_NAME" />
+            <input aocUiInputText aocUiFormField="E-Mail" [formControlName]="UserModelClass.field.EMAIL" />
           </aoc-ui-form-row>
         </aoc-ui-form-page>
       </ng-template>
@@ -45,7 +48,6 @@ import { AocUser } from '../../../../models/users/aoc-user';
   `
 })
 export default class UserFormComponent implements OnInit {
-
   protected UserModelClass = AocUser;
   protected formGroup: FormGroup<AocFormGroupType<AocUser>>;
   protected user: AocUser;
@@ -53,7 +55,7 @@ export default class UserFormComponent implements OnInit {
   protected passwordType: 'password' | 'text' = 'password';
 
   protected restOptions: AocRestOptions<AocUser> = {
-    fields: [ AocUser.field.USERNAME, AocUser.field.FULL_NAME, AocUser.field.EMAIL ]
+    fields: [AocUser.field.USERNAME, AocUser.field.FULL_NAME, AocUser.field.EMAIL]
   };
 
   constructor(
@@ -72,7 +74,7 @@ export default class UserFormComponent implements OnInit {
   }
 
   protected swapPasswordType(_: MouseEvent) {
-    this.passwordType = (this.passwordType === 'password') ? 'text' : 'password';
+    this.passwordType = this.passwordType === 'password' ? 'text' : 'password';
   }
 
   private async handleFormController() {
